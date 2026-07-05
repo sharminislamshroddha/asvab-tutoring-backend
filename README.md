@@ -161,25 +161,6 @@ More entities will be added as development progresses.
 
 ---
 
-## 🛣️ Roadmap
-
-* [x] Project Setup
-* [x] PostgreSQL Integration
-* [x] Prisma ORM
-* [x] Swagger Configuration
-* [x] Global Error Handling
-* [ ] User Registration
-* [ ] User Login
-* [ ] JWT Authentication
-* [ ] User Management
-* [ ] Course Management
-* [ ] Test Management
-* [ ] Results Module
-* [ ] Analytics Dashboard
-* [ ] Admin Panel
-
----
-
 ## 🤝 Contributing
 
 Contributions, suggestions, and improvements are welcome.
