@@ -1,8 +1,8 @@
 # ASVAB Tutoring Platform - Project Overview
 
-> **Document Version:** 1.0.0
-> **Status:** Draft
-> **Last Updated:** July 7, 2026
+> **Document Version:** 1.0.0 <br>
+> **Status:** Draft <br>
+> **Last Updated:** July 7, 2026 <br>
 
 ---
 
