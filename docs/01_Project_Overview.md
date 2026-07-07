@@ -342,27 +342,7 @@ The platform should be responsive and usable on desktop, tablet, and mobile devi
 
 ---
 
-# 12. Future Enhancements
-
-Potential future features include:
-
-* Mobile Application
-* Live Classes
-* Discussion Forum
-* AI Study Assistant
-* Personalized Learning Recommendations
-* Gamification
-* Leaderboards
-* Referral Program
-* Subscription Plans
-* Multi-language Support
-* Multi-instructor Support
-* Affiliate Management
-* Advanced Analytics Dashboard
-
----
-
-# 13. Development Methodology
+# 12. Development Methodology
 
 The project will follow an iterative development process.
 
@@ -380,7 +360,7 @@ Each phase will be reviewed and approved before proceeding to the next.
 
 ---
 
-# 14. Success Criteria
+# 13. Success Criteria
 
 The project will be considered successful when:
 
