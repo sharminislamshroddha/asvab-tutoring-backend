@@ -1,21 +1,48 @@
-# ASVAB Tutoring Platform
+# ASVAB Tutoring Platform - Project Overview
 
-**Version:** 1.0.0
-**Status:** Draft
-**Prepared By:** Project Team
-**Last Updated:** July 7, 2026
+> **Document Version:** 1.0.0
+> **Status:** Draft
+> **Last Updated:** July 7, 2026
+
+---
+
+# Table of Contents
+
+* [1. Project Introduction](#1-project-introduction)
+* [2. Project Objectives](#2-project-objectives)
+* [3. Project Scope](#3-project-scope)
+* [4. Target Users](#4-target-users)
+* [5. User Roles](#5-user-roles)
+* [6. Technology Stack](#6-technology-stack)
+* [7. System Architecture](#7-system-architecture)
+* [8. Major Project Modules](#8-major-project-modules)
+* [9. Core Features](#9-core-features)
+* [10. Non-Functional Requirements](#10-non-functional-requirements)
+* [11. Project Goals](#11-project-goals)
+* [12. Future Enhancements](#12-future-enhancements)
+* [13. Development Methodology](#13-development-methodology)
+* [14. Success Criteria](#14-success-criteria)
 
 ---
 
 # 1. Project Introduction
 
-## 1.1 Overview
+## Overview
 
-The ASVAB Tutoring Platform is a modern web application designed to help students prepare for the Armed Services Vocational Aptitude Battery (ASVAB) examination. The platform provides structured learning materials, practice tests, mock exams, progress tracking, performance analytics, and personalized learning experiences through an intuitive and responsive interface.
+The **ASVAB Tutoring Platform** is a modern web application designed to help students prepare for the **Armed Services Vocational Aptitude Battery (ASVAB)** examination.
 
-In addition to supporting students throughout their learning journey, the platform provides administrators with powerful tools to manage courses, examinations, users, payments, content, reports, and overall system operations.
+The platform provides:
 
-The system will be developed using a modern technology stack to ensure high performance, security, scalability, and maintainability.
+* Online courses
+* Practice tests
+* Mock exams
+* Learning progress tracking
+* Performance analytics
+* Secure online payments
+* Student dashboard
+* Administrative management system
+
+The application is designed to be secure, scalable, responsive, and easy to maintain.
 
 ---
 
@@ -24,36 +51,36 @@ The system will be developed using a modern technology stack to ensure high perf
 The primary objectives of this project are:
 
 * Build a professional online ASVAB learning platform.
-* Provide high-quality learning resources for students.
-* Allow students to practice through quizzes and mock exams.
-* Track learning progress and performance.
-* Enable secure online course purchases.
+* Deliver high-quality learning resources.
+* Provide practice quizzes and mock examinations.
+* Track student learning progress.
+* Enable secure course enrollment and payments.
 * Provide administrators with a complete management system.
-* Generate analytical reports for student performance and business insights.
-* Ensure the platform is responsive across desktop, tablet, and mobile devices.
-* Build a scalable architecture that supports future growth.
+* Generate analytical reports and dashboards.
+* Ensure responsive design across all devices.
+* Build a scalable architecture for future growth.
 
 ---
 
 # 3. Project Scope
 
-The project includes both a public website and a secure dashboard for authenticated users.
+The project consists of three major sections.
 
-### Public Website
+## Public Website
 
-* Home Page
-* About Us
+* Home
+* About
 * Courses
 * Course Details
 * Pricing
 * Blog
 * FAQ
-* Contact Us
+* Contact
 * Login
-* Registration
-* Password Recovery
+* Register
+* Forgot Password
 
-### Student Portal
+## Student Portal
 
 * Dashboard
 * My Courses
@@ -61,29 +88,29 @@ The project includes both a public website and a secure dashboard for authentica
 * Practice Tests
 * Mock Exams
 * Results
-* Progress Tracking
+* Progress
 * Certificates
 * Notifications
-* Profile Management
-* Account Settings
+* Profile
+* Settings
 
-### Administration Portal
+## Administration Portal
 
 * Dashboard
 * User Management
 * Course Management
 * Lesson Management
-* Exam Management
-* Question Bank
 * Categories
+* Question Bank
+* Exam Management
 * Orders
 * Payments
 * Coupons
-* Email Templates
-* Blogs
+* Blog Management
 * Reports
 * Analytics
 * Website Settings
+* Email Templates
 * Audit Logs
 * Role & Permission Management
 
@@ -91,34 +118,23 @@ The project includes both a public website and a secure dashboard for authentica
 
 # 4. Target Users
 
-The platform is designed for the following user groups:
-
-### Guest Visitors
-
-Visitors can explore the website, browse available courses, read blogs, and register for an account.
-
-### Students
-
-Students can enroll in courses, study lessons, complete practice tests, participate in mock exams, monitor progress, and download certificates where applicable.
-
-### Administrators
-
-Administrators manage all educational content, users, examinations, transactions, reports, and platform settings.
-
-### Super Administrators
-
-Super Administrators have full system access, including role management, security settings, audit logs, and platform configuration.
+| User Type           | Description                                                           |
+| ------------------- | --------------------------------------------------------------------- |
+| Guest               | Visitors browsing the public website                                  |
+| Student             | Users enrolled in courses and preparing for the ASVAB exam            |
+| Administrator       | Users responsible for managing the platform                           |
+| Super Administrator | Users with full access to all system settings and management features |
 
 ---
 
 # 5. User Roles
 
-| Role        | Description                                    |
-| ----------- | ---------------------------------------------- |
-| Guest       | Browse public pages without authentication     |
-| Student     | Access purchased courses and learning features |
-| Admin       | Manage operational content and users           |
-| Super Admin | Full system administration and configuration   |
+| Role        | Permissions                                               |
+| ----------- | --------------------------------------------------------- |
+| Guest       | View public pages only                                    |
+| Student     | Access learning resources and personal dashboard          |
+| Admin       | Manage users, courses, exams, and reports                 |
+| Super Admin | Full administrative access including system configuration |
 
 ---
 
@@ -140,17 +156,17 @@ Super Administrators have full system access, including role management, securit
 * Fastify
 * TypeScript
 * Prisma ORM
-* JWT Authentication
 * REST API
+* JWT Authentication
 
 ## Database
 
 * PostgreSQL
 
-## Storage
+## File Storage
 
-* AWS S3 (Production)
 * Local Storage (Development)
+* AWS S3 (Production)
 
 ## Authentication
 
@@ -158,25 +174,25 @@ Super Administrators have full system access, including role management, securit
 * Refresh Token
 * Role-Based Access Control (RBAC)
 
-## Email
+## Email Service
 
 * SMTP
-* Transactional Email Service (Production)
+* Transactional Email Provider (Production)
 
 ## Payment Gateway
 
-(To be finalized based on business requirements.)
+> To be finalized based on business requirements.
 
 ## Deployment
 
 ### Development
 
-* Local Machine
+* Local Development Environment
 * Docker
 
 ### Production
 
-* VPS / Cloud Server
+* VPS or Cloud Server
 * Docker
 * Nginx
 * SSL
@@ -185,27 +201,25 @@ Super Administrators have full system access, including role management, securit
 
 # 7. System Architecture
 
-The platform follows a three-tier architecture.
+The application follows a **three-tier architecture**.
 
-Presentation Layer
+```text
+Client (Next.js)
+        │
+        ▼
+REST API (Fastify)
+        │
+        ▼
+PostgreSQL Database
+```
 
-* Next.js frontend
+Additional services:
 
-Application Layer
-
-* Fastify REST API
-
-Data Layer
-
-* PostgreSQL Database
-
-Additional services include:
-
-* Authentication Service
-* Email Service
+* Authentication
+* Email
 * File Storage
 * Payment Integration
-* Logging Service
+* Logging
 
 ---
 
@@ -213,73 +227,73 @@ Additional services include:
 
 ## Public Website
 
-Provides marketing pages and information for visitors.
+Provides marketing content and information for visitors.
 
 ## Authentication
 
 Handles registration, login, password recovery, and account security.
 
-## Student Learning System
+## Student Learning
 
-Provides course access, lessons, quizzes, exams, and progress tracking.
+Provides access to courses, lessons, practice tests, mock exams, and progress tracking.
 
 ## Examination System
 
-Manages practice tests, mock exams, timing, scoring, and result generation.
+Manages quizzes, practice tests, mock exams, scoring, and result generation.
 
 ## Payment System
 
-Handles purchases, invoices, and payment verification.
+Handles course purchases, invoices, and payment verification.
 
-## Content Management System (CMS)
+## Content Management System
 
-Allows administrators to manage courses, blogs, pages, FAQs, and media.
+Allows administrators to manage website content, blogs, FAQs, and resources.
 
 ## Administration
 
-Provides tools for managing users, reports, analytics, and system settings.
+Provides complete management of users, courses, reports, analytics, and system settings.
 
 ---
 
 # 9. Core Features
 
-### Learning Management
+## Learning
 
-* Online courses
-* Video lessons
-* Reading materials
-* Downloadable resources
+* Online Courses
+* Video Lessons
+* Reading Materials
+* Downloadable Resources
 
-### Assessment
+## Assessment
 
-* Practice quizzes
-* Mock exams
-* Instant scoring
-* Detailed explanations
+* Practice Tests
+* Mock Exams
+* Instant Scoring
+* Answer Explanations
 
-### Student Dashboard
+## Student Dashboard
 
-* Learning progress
-* Exam history
-* Performance charts
+* Learning Progress
+* Recent Results
+* Performance Analytics
 * Notifications
 
-### Administration
+## Administration
 
-* User management
-* Course management
-* Exam management
-* Payment management
-* Reporting
+* User Management
+* Course Management
+* Exam Management
+* Payment Management
+* Reports
 * Analytics
 
-### Website Management
+## Website Management
 
-* Blogs
-* FAQs
-* Contact messages
-* Email templates
-* Website settings
+* Blog
+* FAQ
+* Contact Messages
+* Email Templates
+* Website Settings
 
 ---
 
@@ -294,37 +308,37 @@ Provides tools for managing users, reports, analytics, and system settings.
 ## Security
 
 * JWT Authentication
-* Password hashing
-* Input validation
-* SQL injection protection
-* XSS protection
-* CSRF mitigation where applicable
-* Rate limiting
+* Password Hashing
+* Input Validation
+* SQL Injection Protection
+* XSS Protection
+* CSRF Mitigation (where applicable)
+* API Rate Limiting
 
 ## Scalability
 
-The architecture should support increasing numbers of users, courses, and examinations without significant changes to the system design.
+The system should support increasing numbers of users, courses, and examinations without requiring major architectural changes.
 
 ## Reliability
 
-The application should provide stable performance with appropriate logging, monitoring, and backup strategies.
+The application should provide stable performance with proper logging, monitoring, and backup strategies.
 
 ## Accessibility
 
-The interface should follow modern accessibility practices and be usable on desktop, tablet, and mobile devices.
+The platform should be responsive and usable on desktop, tablet, and mobile devices.
 
 ---
 
 # 11. Project Goals
 
-* Clean architecture
-* Modular codebase
-* Easy maintenance
-* Reusable components
+* Clean Architecture
+* Modular Development
+* Reusable Components
 * Secure APIs
-* Responsive design
-* Production-ready deployment
-* Comprehensive documentation
+* Responsive Design
+* Production-Ready Deployment
+* Comprehensive Documentation
+* Easy Maintenance
 
 ---
 
@@ -332,19 +346,19 @@ The interface should follow modern accessibility practices and be usable on desk
 
 Potential future features include:
 
-* Mobile application
-* Live classes
-* Discussion forum
-* AI-powered study assistant
-* Personalized learning recommendations
-* Gamification and achievements
+* Mobile Application
+* Live Classes
+* Discussion Forum
+* AI Study Assistant
+* Personalized Learning Recommendations
+* Gamification
 * Leaderboards
-* Referral program
-* Subscription plans
-* Multi-language support
-* Multi-instructor support
-* Affiliate management
-* Advanced analytics dashboard
+* Referral Program
+* Subscription Plans
+* Multi-language Support
+* Multi-instructor Support
+* Affiliate Management
+* Advanced Analytics Dashboard
 
 ---
 
@@ -352,7 +366,7 @@ Potential future features include:
 
 The project will follow an iterative development process.
 
-1. Requirements Documentation
+1. Requirements Analysis
 2. Database Design
 3. API Design
 4. UI/UX Design
@@ -360,9 +374,9 @@ The project will follow an iterative development process.
 6. Frontend Development
 7. Testing
 8. Deployment
-9. Maintenance and Continuous Improvement
+9. Maintenance
 
-Each phase will be completed and reviewed before moving to the next to ensure consistency and quality throughout the project lifecycle.
+Each phase will be reviewed and approved before proceeding to the next.
 
 ---
 
@@ -371,8 +385,8 @@ Each phase will be completed and reviewed before moving to the next to ensure co
 The project will be considered successful when:
 
 * All planned features are implemented.
-* The platform performs reliably under expected usage.
-* Students can successfully complete the full learning journey.
+* Students can complete the full learning journey.
 * Administrators can manage the platform efficiently.
-* The application is secure, scalable, and production-ready.
-* Documentation remains up to date and supports future development.
+* The application is secure, scalable, and responsive.
+* Documentation remains accurate and up to date.
+* The platform is ready for production deployment.
