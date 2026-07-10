@@ -8,18 +8,59 @@
 
 # Table of Contents
 
-* [Authentication Module](#authentication-module)
-
-  * [Login](#login)
 * [Public Website](#public-website)
+  * [Home](#home)
+  * [About](#about)
+  * [Courses](#courses)
+  * [Course Details](#course-details)
+  * [Pricing](#pricing)
+  * [FAQ](#faq)
+  * [Contact](#contact)
+  * [Blog](#blog)
+  * [Blog Details](#blog-details)
+  * [Login](#login)
+  * [Register](#register)
+  * [Forgot Password](#forgot-password)
+
 * [Student Portal](#student-portal)
+  * [Dashboard](#dashboard)
+  * [My Courses](#my-courses)
+  * [Course Learning](#course-learning)
+  * [Lesson Player](#lesson-player)
+  * [Practice Tests](#practice-tests)
+  * [Mock Exams](#mock-exams)
+  * [Results](#results)
+  * [Progress](#progress)
+  * [Certificates](#certificates)
+  * [Notifications](#notifications)
+  * [Profile](#profile)
+  * [Settings](#settings)
+
 * [Admin Portal](#admin-portal)
+  * [Dashboard](#dashboard-1)
+  * [Users](#users)
+  * [Roles & Permissions](#roles--permissions)
+  * [Categories](#categories)
+  * [Courses](#courses-1)
+  * [Lessons](#lessons)
+  * [Question Bank](#question-bank)
+  * [Exams](#exams)
+  * [Orders](#orders)
+  * [Payments](#payments)
+  * [Coupons](#coupons)
+  * [Blog](#blog-1)
+  * [Reports](#reports)
+  * [Analytics](#analytics)
+  * [Contact Messages](#contact-messages)
+  * [Email Templates](#email-templates)
+  * [Website Settings](#website-settings)
+  * [Audit Logs](#audit-logs)
 
 ---
 
-# Authentication Module
+# Public Website
 
-## Login
+## Home
 
 <details>
 <summary><strong>View Functional Requirements</strong></summary>
